@@ -15,7 +15,7 @@ This app reads a file with `email:password` pairs, encrypts the passwords, store
 ```bash
 git clone https://github.com/YOUR_USERNAME/ASE285-individual-password-app
 cd ASE285-individual-password-app
-
+```
 
 ### 2. Install Dependencies
 

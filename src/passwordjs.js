@@ -21,10 +21,9 @@ async function passwordjs() {
     const password = process.argv[4];
     const hashed = util.hash(password);
 
-    try {
+    try{
         await mongoose.connect(mongoURL);
-        const found = await User.findOne({ email: email });
-
+        const found = await User.findOne({ email: email});
         await mongoose.disconnect();
 
         if (!found) return 'false';

@@ -11,7 +11,7 @@ mongoose.connect(mongoURL)
     .catch(err => console.error(' MongoDB connection error:', err));
 
 
-const userSchema = new mongoose.Schema({
+const userSchema =new mongoose.Schema({
     email: String,
     hash: String
 });
@@ -20,7 +20,7 @@ const User = mongoose.model('User', userSchema);
 
 
 function uploadData() {
-    const lines = fs.readFileSync('password.enc.txt', 'utf-8').split('\n');
+    const lines = fs.readFileSync('password.enc.txt','utf-8').split('\n');
 
     const users = lines.map(line => {
         const [email, hash] = line.split(':');
@@ -29,15 +29,18 @@ function uploadData() {
 
 
     User.deleteMany({})
-        .then(() => {
+        .then(() =>
+        {
             return User.insertMany(users);
         })
-        .then(() => {
+        .then(() =>
+        {
             console.log('All users inserted after cleanup!');
             mongoose.disconnect();
         })
-        .catch(err => {
-            console.error('Insert error:', err);
+        .catch(err =>
+        {
+            console.error('Insert error:',err);
             mongoose.disconnect();
         });
 }

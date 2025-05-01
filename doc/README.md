@@ -1,6 +1,6 @@
 # ASE285 Project – Encrypted Login System
 
-**Name:** Priyanka  
+**Name:** Priyanka Pandit 
 **Course:** ASE 285 at NKU  
 **Project:** HW6 – Encrypted Login System
 
@@ -8,7 +8,7 @@
 
 ## What This Project Does
 
-This project takes a list of emails and passwords, hashes the passwords, saves them in a MongoDB database, and lets you check if login info is correct. It's made using Node.js and follows what we learned in ASE 285.
+This project takes a list of emails and passwords, hashes the passwords, saves them in a MongoDB database and lets you check if login info is correct. It is made using Node.js and follows what we learned in ASE 285.
 
 ---
 
@@ -44,7 +44,7 @@ git clone https://github.com/panditp1/ASE285-individual-password-app
 cd ASE285-individual-password-app
 ```
 
-2. Install everything:
+2. Install everything (others as needed):
 
 ```bash
 npm install
@@ -97,7 +97,7 @@ This means it works correctly for good and bad logins.
 
 ---
 
-##  What's In Here
+##  What's in here
 
 ```
 /data
@@ -124,4 +124,4 @@ README.md
 
 ## Final Notes
 
-I followed the instructions and did the project on my own. Everything works, and I tested it using the example cases. I am happy with how it turned out!
+I followed the instructions and did the project. Everything works and I tested it using the example cases. I am happy with how it turned out.

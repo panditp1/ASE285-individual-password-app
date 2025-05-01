@@ -1,0 +1,12 @@
+{
+  "name": "ase285-individual-password-app",
+  "version": "1.0.0",
+  "description": "# HW8 – Encrypted Login System (Priyanka)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

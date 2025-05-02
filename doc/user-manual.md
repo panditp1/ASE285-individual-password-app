@@ -1,31 +1,29 @@
-##  Final Markdown Text for `user-manual.md`
+# User Manual
 
-#  User Manual
+## Overview
 
-##  Overview
-
-This app reads a file with `email:password` pairs, encrypts the passwords, stores them in a MongoDB database, and checks login attempts for validity.
+This app reads a list of email and password pairs, hashes the passwords (so we’re not storing them as plain text), saves them in a MongoDB database, and lets you check if someone’s login info is right or not.
 
 ---
 
-##  Setup Instructions
+## Setup Instructions
 
-### 1. Clone the Repository
+### 1. Clone the repo
 
 ```bash
 git clone https://github.com/panditp1/ASE285-individual-password-app
 cd ASE285-individual-password-app
 ```
 
-### 2. Install Dependencies
+### 2. Install what you need
 
 ```bash
 npm install
 ```
 
-### 3. Prepare Input File
+### 3. Add your input file
 
-Make sure you have a `password.txt` file in the root of the project directory, formatted like this:
+Make sure there is a file called `password.txt` inside the `data/` folder and it looks like this:
 
 ```
 someone@example.com:password123
@@ -34,65 +32,75 @@ another@email.com:mysecurepass
 
 ---
 
-## ▶ Run the App
+## Run the app
+
+To hash the passwords and upload them to the database:
 
 ```bash
-node index.js
-```
-
-This will:
-- Read `password.txt`
-- Generate a hashed `password.enc.txt`
-- Upload the data to MongoDB
-
----
-
-## Check Login Function
-
-You can use this inside your app:
-
-```js
-checkLogin('someone@example.com', 'password123'); // Returns true or false
+node src/makepassword.js
+node src/db.js
 ```
 
 ---
 
-##  Testing
+## Try checking a login
 
-The project includes:
-- Unit tests for file reading, hashing, and DB functions
-- Acceptance test file to simulate login attempts
-
-Run the tests using:
+Run this command with any email/password pair:
 
 ```bash
-npm test
+node src/passwordjs.js data/password.txt someone@example.com password123
 ```
 
-Or, if using the provided batch script:
+It will return `true` or `false` depending on whether it matches what is in the database.
+
+---
+
+## Testing
+
+### Unit tests
+
+There are tests for:
+- reading the file
+- hashing passwords
+- writing to the output file
+
+### Acceptance test
+
+To check if everything’s working like it should:
 
 ```bash
 sh acceptance.bat
 ```
 
----
-
-## Output Example
-
-Generated `password.enc.txt`:
+You should see something like:
 
 ```
-someone@example.com:a6c2353c6b7e9e29f8d6bba5b1cf1234abcd5678...
-```
-
----
-
-## Troubleshooting
-
-- Make sure MongoDB is running locally or connected via MongoDB Atlas
-- Check that `password.txt` is properly formatted (one entry per line, no spaces)
-- If using environment variables, ensure `.env` file is correctly set up with your MongoDB URI
-
+true
+true
+true
+true
+false
+false
+false
+false
 ```
 
 ---
+
+## Example Output
+
+After running the hashing part, your `password.enc.txt` might look like:
+
+```
+someone@example.com:8d969eef6ecad3c29a3a629280e686cf...
+```
+
+---
+
+## If Something Breaks...
+
+- Double check if your MongoDB is connected (locally or via atlas)
+- Make sure `password.txt` is formatted properly..(no spaces, one pair per line)
+- If you’re using a `.env` file, make sure the MongoDB URI is correct
+
+Hope that helps...!

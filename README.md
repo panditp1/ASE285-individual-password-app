@@ -1,6 +1,6 @@
-# ASE285 Project – Encrypted Login System
+# ASE285 Project- Encrypted Login System
 
-**Name:** Priyanka  
+**Name:** Priyanka Pandit
 **Course:** ASE 285 at NKU  
 **Project:** HW6 – Encrypted Login System
 
@@ -12,7 +12,7 @@ This project takes a list of emails and passwords, hashes the passwords, saves t
 
 ---
 
-##  Tools I Used
+## Tools I Used
 
 - Node.js
 - MongoDB Atlas (cloud database)
@@ -22,20 +22,38 @@ This project takes a list of emails and passwords, hashes the passwords, saves t
 
 ---
 
-## Weekly Plan
+## What I Did by Day
 
-| Week   | What I Did                                |
-|--------|--------------------------------------------|
-| Week 1 | Wrote down requirements + made a diagram   |
-| Week 2 | Coded the file reading + hashing part      |
-| Week 3 | Connected to MongoDB and uploaded data     |
-| Week 4 | Wrote the login checker + tested it        |
-| Week 5 | Made user manual + added acceptance test   |
-| Week 6 | Cleaned everything up and submitted        |
+### Day 1 – Planning
+- Read the assignment
+- Looked over the template files
+- Wrote down what the app should do
+- Sketched out the folder structure
+
+### Day 2 – File Handling & Hashing
+- Coded file reading from `password.txt`
+- Implemented SHA-256 hashing
+- Wrote output to `password.enc.txt`
+
+### Day 3 – MongoDB Integration
+- Set up MongoDB Atlas and Mongoose
+- Connected the app to MongoDB
+- Uploaded email:hash data to the database
+
+### Day 4 – Login Checker
+- Built `passwordjs.js` to check logins
+- Tested different true/false scenarios
+- Made sure invalid logins return `false`
+
+### Day 5 – Testing & Cleanup
+- Wrote `test.js` for unit testing
+- Ran and passed the acceptance test
+- Cleaned up files and deleted `.idea/`,`node_modules/`
+- Finalized `README.md` and docs
 
 ---
 
-##  How to Run This
+## How to Run This
 
 1. Clone the project:
 
@@ -50,7 +68,7 @@ cd ASE285-individual-password-app
 npm install
 ```
 
-3. Make sure you have a file at `data/password.txt` with stuff like:
+3. Make sure you have a file at `data/password.txt` with content like:
 
 ```
 sm.cho@hello.com:123456
@@ -74,7 +92,7 @@ node src/passwordjs.js data/password.txt sm.cho@hello.com 123456
 
 ## To Run the Acceptance Test
 
-Just do this:
+Run this:
 
 ```bash
 sh acceptance.bat
@@ -93,7 +111,7 @@ false
 false
 ```
 
-This means it works correctly for good and bad logins.
+This confirms it handles all correct and incorrect login scenarios.
 
 ---
 
@@ -124,4 +142,4 @@ README.md
 
 ## Final Notes
 
-I followed the instructions and did the project on my own. Everything works, and I tested it using the example cases. I'm happy with how it turned out!
+I followed the instructions and did the project on my own. Everything works and I tested it using the example cases. I am happy with how it turned out.

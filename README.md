@@ -129,17 +129,31 @@ This confirms it handles all correct and incorrect login scenarios.
   ├── test.js
   └── utility.js
 
+/tests
+  ├── makepassword.test.js
+  ├── passwordjs.test.js
+  ├── passwordtest.txt
+  └── passwordtest.enc.txt
+
 /doc
   ├── requirements.md
   ├── design.md
-  └── user-manual.md
+  ├── user-manual.md
+  └── ASE285 Flow Chart.png
 
 acceptance.bat
 README.md
+.gitignore
+package.json
+package-lock.json
 ```
+
 
 ---
 
 ## Final Notes
 
 I followed the instructions and did the project on my own. Everything works and I tested it using the example cases. I am happy with how it turned out.
+
+
+

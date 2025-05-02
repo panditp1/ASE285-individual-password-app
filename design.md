@@ -1,6 +1,7 @@
 # System Design
 
-![Architecture + Testing Diagram](./flowchart.png)
+![Architecture + Testing Diagram](./![ASE285 Flow Chart](https://github.com/user-attachments/assets/c3cbcd7c-cb52-4789-9b32-a70173231204)
+)
 
 
 ##  Architecture Overview

@@ -7,8 +7,8 @@ const mongoURL = 'mongodb+srv://ase285user:asepass123@cluster0.qu68f.mongodb.net
 
 
 mongoose.connect(mongoURL)
-    .then(() => console.log(' Connected to MongoDB Atlas'))
-    .catch(err => console.error(' MongoDB connection error:', err));
+    .then(() => console.log('Connected to MongoDB Atlas'))
+    .catch(err => console.error('MongoDB connection error:', err));
 
 
 const userSchema =new mongoose.Schema(
@@ -40,6 +40,7 @@ function uploadData() {
             mongoose.disconnect();
         })
         .catch(err =>
+
         {
             console.error('Insert error:',err);
             mongoose.disconnect();

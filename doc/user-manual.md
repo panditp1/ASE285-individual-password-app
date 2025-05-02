@@ -13,7 +13,7 @@ This app reads a file with `email:password` pairs, encrypts the passwords, store
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ASE285-individual-password-app
+git clone https://github.com/panditp1/ASE285-individual-password-app
 cd ASE285-individual-password-app
 ```
 

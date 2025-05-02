@@ -1,5 +1,8 @@
 # System Design
 
+![Architecture + Testing Diagram](./flowchart.png)
+
+
 ##  Architecture Overview
 
 The application consists of four main modules:

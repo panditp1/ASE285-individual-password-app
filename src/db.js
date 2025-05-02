@@ -1,7 +1,7 @@
 'use strict';
 
 const fs = require('fs');
-const mongoose = require('mongoose');
+const mongoose =require('mongoose');
 
 const mongoURL = 'mongodb+srv://ase285user:asepass123@cluster0.qu68f.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
@@ -11,7 +11,8 @@ mongoose.connect(mongoURL)
     .catch(err => console.error(' MongoDB connection error:', err));
 
 
-const userSchema =new mongoose.Schema({
+const userSchema =new mongoose.Schema(
+    {
     email: String,
     hash: String
 });

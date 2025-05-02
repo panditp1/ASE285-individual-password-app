@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d887c2f-b3f5-4065-8df7-383ca7653b9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/makepassword.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/passwordjs.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/passwordtest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.js" afterDir="false" />
-    </list>
+    <list default="true" id="0d887c2f-b3f5-4065-8df7-383ca7653b9f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746130110186</updated>
       <workItem from="1746130111244" duration="10286000" />
-      <workItem from="1746148937808" duration="1602000" />
+      <workItem from="1746148937808" duration="1832000" />
     </task>
     <servers />
   </component>
